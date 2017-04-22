@@ -19,8 +19,8 @@ public class TestProcedimiento1 {
         Connection con=c.conectarse();
      CallableStatement ingresar=con.prepareCall("{call guardar_alumno(?,?,?)}");
         ingresar.registerOutParameter(1,java.sql.Types.INTEGER);
-        ingresar.setString(2,"Ale");
-        ingresar.setString(3,"Barojas");
+        ingresar.setString(2,"Jorge");
+        ingresar.setString(3,"Zamora");
       
         ingresar.execute();
         int pk=ingresar.getInt(1);
